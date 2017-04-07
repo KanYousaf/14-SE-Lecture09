@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.lecture09.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center|top">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to TTS and STT"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Text for Speech"
+        android:id="@+id/textToSpeechET"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speak"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/btn_clicked_speak"
+        android:onClick="tts_function"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listen"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/btn_clicked_Listen"
+        android:onClick="stt_function"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/display_text"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Handling"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/btn_clicked_file"
+        android:onClick="file_handling_function"/>
+
+</LinearLayout>
