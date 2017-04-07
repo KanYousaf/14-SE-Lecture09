@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //start activity for file handling
     public void file_handling_function(View view) {
         Intent i=new Intent(MainActivity.this, Gre_Words.class);
         startActivity(i);

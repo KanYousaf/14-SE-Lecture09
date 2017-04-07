@@ -45,7 +45,6 @@ public class Gre_Words extends AppCompatActivity {
 
     public void readFromFileAndDisplay(){
         Scanner scanner=new Scanner(getResources().openRawResource(R.raw.grewords));
-
         while(scanner.hasNextLine()){
             String Line=scanner.nextLine();
             String[] parts=Line.split("\t");
@@ -54,6 +53,7 @@ public class Gre_Words extends AppCompatActivity {
                 gre_array_list.add(new WordDictionary(gre_words_for_arrayList));
             }
         }
+        //if file is in open state, let it close first
         if(scanner!=null){
             scanner.close();
         }

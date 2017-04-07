@@ -18,8 +18,10 @@ public class Gre_Definition extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gre__definition);
         gre_definition=(TextView)this.findViewById(R.id.gre_definition);
-
+        //instantiate hash map otherwise it will generate null pointer exception
         dictionary_hashMap=new HashMap<>();
+
+        //receiving the word for displaying it's meaning here using recycler view
         Intent i=getIntent();
         gre_word_received=i.getExtras().getString("gre_word_to_pass");
         readFromGREFile();
